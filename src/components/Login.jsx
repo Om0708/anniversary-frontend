@@ -23,7 +23,9 @@ export default function Login({ setToken }) {
   return (
     <div
       className="min-h-screen flex items-center justify-center bg-gradient-to-r from-yellow-100 via-pink-200 to-red-200"
-      style={{ backgroundImage: "url('/assets/login-bg.jpeg')" }}
+      style={{ backgroundImage: "url('/assets/login-bg.jpeg')" , backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat"}}
     >
       <div className="bg-white bg-opacity-80 p-8 rounded-xl shadow-lg max-w-sm w-full">
         <h2 className="text-3xl font-bold text-center text-pink-600 mb-6">
