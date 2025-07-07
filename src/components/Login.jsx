@@ -9,7 +9,7 @@ export default function Login({ setToken }) {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("https://anniversary-backend-37x1.onrender.com/api/login", {
+      const res = await axios.post(`${import.meta.env.VITE_API_URL}/login`, {
         username,
         password,
       });
