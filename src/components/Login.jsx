@@ -9,7 +9,7 @@ export default function Login({ setToken }) {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post(`${import.meta.env.VITE_API_URL}`, {
+      const res = await axios.post("https://anniversary-backend-37x1.onrender.com/api/login", {
         username,
         password,
       });
@@ -32,10 +32,7 @@ export default function Login({ setToken }) {
 
         {error && <p className="text-red-500 text-center">{error}</p>}
 
-        <form
-          onSubmit={handleLogin}
-          className="flex flex-col space-y-4"
-        >
+        <form onSubmit={handleLogin} className="flex flex-col space-y-4">
           <input
             type="text"
             placeholder="Username"
